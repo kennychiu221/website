@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenneth Chiu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script src="https://kit.fontawesome.com/298cbef351.js"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <img src="images/logo.png" class="img">
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <img src="images/logo.png" class="img">
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="./index.html" onclick="toggleMenu()">Home Page</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./images/email.jpg" 
+                alt=""
+                class="icon contact-icon"/>
+                <p><a href="mailto:kennychiu221@gmail.com">kennychiu221@gmail.com</a>
+                </p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./images/insta.jpg" 
+                alt=""
+                class="icon contact-icon"/>
+                <p><a href="https://www.instagram.com/kennychiu125/">kennychiu125</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="./index.html">Press here to go back to home page</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169 2023 Kenneth Chiu. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
