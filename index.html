@@ -43,8 +43,8 @@
             <img src="images/KENNY.JPG" class="Kenny">
         </div>
         <div class="section__text">
-            <p class="section__text__p1">Hello I'm</p>
-            <h1 class="title"><span>Kenneth Chiu</span><br>From London</h1>
+            <p class="section__text__p1">Hello.</p>
+            <h1 class="title"><span class="auto-type"></span></h1>
             <p class="section__text__p2">Self Taught Frontend Developer</p>
             <div class="btn-container">
                 <button class="btn btn-color-2" 
@@ -207,6 +207,16 @@
                                 <p>Intermediate</p>
                             </div>
                         </article>
+                        <article>
+                            <img 
+                            src="./images/tick.png" 
+                            alt="Experience Icon"
+                            class="icon">
+                            <div>
+                                <h3>React JS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
@@ -268,5 +278,14 @@
         <p>Copyright &#169 2023 Kenneth Chiu. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('.auto-type', {
+            strings: ["I'm Kenneth Chiu" , "I'm From London", "Programming Enthusiast"],
+            typeSpeed: 120,
+            backSpeed: 110,
+            loop: true
+        })
+    </script>
 </body>
 </html>
