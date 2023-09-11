@@ -321,6 +321,186 @@ section{
     margin: auto 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Rancho&family=Water+Brush&display=swap');
+
+.skills_section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.skills_head{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin-top: -30px;
+}
+.skills_head h2{
+    font-size: 30px;
+    margin-bottom: -5px;
+}
+.skills_head h2 span{
+    color: rgb(1, 157, 168);
+}
+.skills_main{
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 0px;
+    grid-column-gap: 40px;
+}
+.skills_main .skill_bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.skill_bar .info p:nth-child(2){
+    font-weight: 500;
+}
+.skill_bar .bar{
+    width: 100%;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.144);
+    border-radius: 25px;
+    margin-top: 5px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.skill_bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(1, 157, 168);
+    border-radius: 25px;
+}
+
+/* ----------------------------------front end -------------------------------------*/
+.skill_bar .bar .html{
+    width: 90%;
+    animation: html 2s;
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }100%{
+        width: 90%;
+    }
+}
+.skill_bar .bar .css{
+    width: 85%;
+    animation: css 2s;
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }100%{
+        width: 85%;
+    }
+}
+.skill_bar .bar .js{
+    width: 80%;
+    animation: css 2s;
+}
+@keyframes js {
+    0%{
+        width: 0%;
+    }100%{
+        width: 80%;
+    }
+}
+.skill_bar .bar .python{
+    width: 50%;
+    animation: css 2s;
+}
+@keyframes python {
+    0%{
+        width: 0%;
+    }100%{
+        width: 50%;
+    }
+}
+
+.skill_bar .bar .typescript{
+    width: 35%;
+    animation: css 2s;
+}
+@keyframes python {
+    0%{
+        width: 0%;
+    }100%{
+        width: 35%;
+    }
+}
+
+
+
+/*------------------ back end ------------------------*/
+
+.skill_bar .bar .node{
+    width: 70%;
+    animation: css 2s;
+}
+@keyframes node {
+    0%{
+        width: 0%;
+    }100%{
+        width: 70%;
+    }
+}
+
+.skill_bar .bar .react{
+    width: 40%;
+    animation: css 2s;
+}
+@keyframes react {
+    0%{
+        width: 0%;
+    }100%{
+        width: 40%;
+    }
+}
+
+.skill_bar .bar .express{
+    width: 40%;
+    animation: css 2s;
+}
+@keyframes react {
+    0%{
+        width: 0%;
+    }100%{
+        width: 40%;
+    }
+}
+
+.skill_bar .bar .c{
+    width: 30%;
+    animation: css 2s;
+}
+@keyframes c {
+    0%{
+        width: 0%;
+    }100%{
+        width: 30%;
+    }
+}
+
+.skill_bar .bar .postgresql{
+    width: 40%;
+    animation: css 2s;
+}
+@keyframes python {
+    0%{
+        width: 0%;
+    }100%{
+        width: 40%;
+    }
+}
+
+
 /*--------------------------Experience-------------------------*/
 
 #experience{
@@ -365,6 +545,7 @@ article .icon{
 #projects {
     position: relative;
     height: auto;
+    padding: 50px 0;
 }
 
 .color-container {
@@ -386,6 +567,46 @@ article .icon{
 .project-btn{
     color: black;
     border-color: rgb(163, 163, 163);
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    border: solid 3px;
+    
+}
+
+.work h2 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    padding: 20px;
+}
+
+.layer{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+}
+
+.findmore{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 1000;
 }
 
 /*--------------------------Contact Me-------------------------*/
